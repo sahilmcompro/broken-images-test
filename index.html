@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken imgages test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <p>Alt text blank </p>
+        <img src="unit1.jpg" alt="">
+        <img src="broken.jpg" alt="">
+    </div>
+    <div>
+        <p>Alt text present </p>
+        <img src="unit1.jpg" alt="Unit 1 image">
+        <img src="broken.jpg" alt="Unit 1 image">
+    </div>
+    <div>
+        <p>alt blank + hiding image onError </p>
+        <img src="unit1.jpg" alt="" onerror="this.style.visibility = 'hidden';">
+        <img src="broken.jpg" alt="" onerror="this.style.visibility = 'hidden';">
+    </div>
+    <div>
+        <p>alt blank + changing src onError </p>
+        <img src="unit1.jpg" alt=""
+            onerror="this.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';">
+        <img src="broken.jpg" alt=""
+            onerror="this.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';">
+    </div>
+    <div>
+        <p>Alt text blank + using a css thing </p>
+        <img src="unit1.jpg" alt="" class="img-class1">
+        <img src="broken.jpg" alt="" class="img-class1">
+    </div>
+    <div>
+        <p>Some Alt text + using a css thing </p>
+        <img src="unit1.jpg" alt="unit 1 image" class="img-class1">
+        <img src="broken.jpg" alt="unit 1 image" class="img-class1">
+    </div>
+</body>
+</html>
