@@ -1,6 +1,8 @@
 name: New Development v2
 description: Use this template for creating new issues for development tasks.
 title: '[Development objective - describe your development in less than 50 words]'
+assignees:
+  - @me
 body:
   - type: textarea
     id: description
