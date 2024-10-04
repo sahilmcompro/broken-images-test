@@ -76,20 +76,15 @@ body:
       label: Pre-development checklist
       description: Ensure that your team has gone through the following guidelines before starting development
       options:
-        - label: |
-            [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
+        - label: '[Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)'
           required: true
-        - label: |
-            [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
+        - label: '[GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)'
           required: true
-        - label: |
-            [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) guidelines
+        - label: '[Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security)'
           required: true
-        - label: |
-            [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines
+        - label: '[Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance)'
           required: true
-        - label: |
-            [Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)
+        - label: '[Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)'
           required: true
 
   - type: checkboxes
@@ -113,6 +108,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: new-projectors
@@ -121,6 +118,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: new-commands
@@ -129,6 +128,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: new-mappers
@@ -137,6 +138,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: new-repositories
@@ -145,6 +148,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue and the reason why can't you use the existing ones?
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: new-composables
@@ -153,6 +158,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue and justify why you it is needed?
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: modify-common-elements
@@ -161,6 +168,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue and justify why you it is needed?
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: special-features
@@ -169,6 +178,8 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
+    validations:
+      required: true
 
   - type: dropdown
     id: wpt-tests
@@ -177,3 +188,5 @@ body:
       options:
         - ✅ Yes. Provide WPT links after you have run them
         - ❌ No
+    validations:
+      required: true
