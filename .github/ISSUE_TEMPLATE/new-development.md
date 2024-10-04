@@ -37,6 +37,7 @@ Make sure to complete this checklist before you create this issue.
 * [✅|❌] Added one of the following label: "New-Feature", "Refactoring", OR "Experimental".
 * [✅|❌] Added label for the APP: "Dashboard"
 * [✅|❌] Added the applicable labels: "Read-Scenario" OR "Write-Scenario"?
+* [✅|❌] Are you planning to use some special features such as Permanent cached images, sprites, etc? If yes, have you mentioned them clearly in the description?
 * [✅|❌] Are you planning to run WPT tests after this update?
 * [✅|❌] Are you planning to run WPT tests of the whole APP after this update?
 
@@ -62,4 +63,4 @@ Make sure to complete this checklist before you close this issue.
 * [✅|❌] Have you run WPT tests?
 * [✅|❌] Have you checked your updates for vulnerabilities?
 * [✅|❌] Have you checked your updates for Sonar Issues?
-* [✅|❌] Have you checked your updates for accessibility guidelines?
+* [✅|❌] Have you checked your updates for [Accessibility guidelines](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)?
