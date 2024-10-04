@@ -1,15 +1,15 @@
 ---
 name: New development
-about: Issue template to describe any new code development
+about: Describes any new code development to be done
 title: "[Development title]"
 labels: ''
 assignees: ''
 
 ---
 
-# [Feature title - describe your development in less than 50 words]
+# [Developement title - describe your development in less than 50 words]
 
-[Describe your feature in detail. Also, mention the tentative release]
+[Describe your development in detail. Also, mention the tentative release]
 
 ## Affected user pages
 
@@ -21,7 +21,7 @@ List of backend routes which are being introduced/modified/deleted as part of th
 
 # MOCKs/Screenshots
 
-Please add any screenshots/MOCKs that are available for this feature
+Please add any screenshots/MOCKs that are available for this development
 
 # Access Patterns
 
@@ -41,7 +41,6 @@ Make sure to complete this checklist before you create this issue.
 * [✅|❌] Added one of the following label: "New-Feature", "Refactoring", OR "Experimental".
 * [✅|❌] Added label for the APP: "Dashboard"
 * [✅|❌] Added the applicable labels: "Read-Scenario" OR "Write-Scenario"?
-* [✅|❌] Are you planning to use some special features such as Permanent cached images, sprites, etc? If yes, have you mentioned them clearly in the description?
 * [✅|❌] Are you planning to run WPT tests after this update?
 * [✅|❌] Are you planning to run WPT tests of the whole APP after this update?
 
@@ -53,7 +52,7 @@ Make sure to complete this checklist before you start development.
 * [✅|❌] Introducing new projector(s)?
 * [✅|❌] Introducing new command(s) and relevant domain service(s)?
 * [✅|❌] Introducing new mapper(s)?
-* [✅|❌] Introducing new repositories(s)?
+* [✅|❌] Introducing new repository(s)?
 * [✅|❌] Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?
 * [✅|❌] Have you and your team go through the [Coding guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines), [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines), [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) & [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance)?
 
@@ -67,4 +66,4 @@ Make sure to complete this checklist before you close this issue.
 * [✅|❌] Have you run WPT tests?
 * [✅|❌] Have you checked your updates for vulnerabilities?
 * [✅|❌] Have you checked your updates for Sonar Issues?
-* [✅|❌] Have you checked your updates for [Accessibility guidelines](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)?
+* [✅|❌] Have you checked your updates for accessibility guidelines?
