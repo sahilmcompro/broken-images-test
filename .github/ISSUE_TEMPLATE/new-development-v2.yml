@@ -40,7 +40,7 @@ body:
         2. [User2]
     validations:
       required: true
-  
+
   - type: textarea
     id: affected-pages
     attributes:
@@ -79,13 +79,17 @@ body:
         - label: |
             [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
           required: true
-        - label: [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
+        - label: |
+            [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
           required: true
-        - label: [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) guidelines
+        - label: |
+            [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) guidelines
           required: true
-        - label: [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines
+        - label: |
+            [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines
           required: true
-        - label: [Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)
+        - label: |
+            [Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)
           required: true
 
   - type: checkboxes
@@ -133,7 +137,7 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
-  
+
   - type: dropdown
     id: new-repositories
     attributes:
@@ -141,7 +145,7 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue and the reason why can't you use the existing ones?
         - ❌ No
-  
+
   - type: dropdown
     id: new-composables
     attributes:
@@ -165,7 +169,7 @@ body:
       options:
         - ✅ Yes. Provide more details after creating the issue
         - ❌ No
-  
+
   - type: dropdown
     id: wpt-tests
     attributes:
