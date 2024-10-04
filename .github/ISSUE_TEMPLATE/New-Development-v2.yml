@@ -1,0 +1,75 @@
+name: New Development v2
+description: Use this template for new development tasks.
+title: "[New Development] "
+labels: ["New-Feature", "Refactoring", "Experimental"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Description
+        Please provide a detailed description of the new development task.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the new development task.
+      placeholder: Describe the task in detail...
+
+  - type: checkboxes
+    id: wpt_tests
+    attributes:
+      label: WPT Tests
+      description: Are you planning to run WPT tests after this update?
+      options:
+        - label: Yes
+          value: yes
+        - label: No
+          value: no
+
+  - type: checkboxes
+    id: wpt_tests_whole_app
+    attributes:
+      label: WPT Tests for Whole App
+      description: Are you planning to run WPT tests of the whole APP after this update?
+      options:
+        - label: Yes
+          value: yes
+        - label: No
+          value: no
+
+  - type: markdown
+    attributes:
+      value: |
+        # Pre-development checklist
+        Make sure to complete this checklist before you start development.
+
+  - type: checkboxes
+    id: pre_development_checklist
+    attributes:
+      label: Pre-development Checklist
+      options:
+        - label: Introducing new entities or value object(s)? If any, make sure that they are clearly mentioned.
+          value: new_entities
+        - label: Introducing new projector(s) and read model(s)?
+          value: new_projectors
+        - label: Introducing new command(s), command-result(s) and relevant domain service(s)?
+          value: new_commands
+        - label: Introducing new mapper(s)?
+          value: new_mappers
+        - label: Introducing new repository(s)?
+          value: new_repositories
+        - label: Introducing new composable(s)?
+          value: new_composables
+        - label: Are you using NuxtLink(s)?
+          value: using_nuxtlinks
+        - label: Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?
+          value: updating_common_components
+        - label: Ensure that your team has gone through the [Coding](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines), [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines), [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) & [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines?
+          value: team_guidelines
+
+  - type: markdown
+    attributes:
+      value: |
+        # Post-development checklist
+        Make sure to complete this checklist before you close this issue.
