@@ -76,7 +76,8 @@ body:
       label: Pre-development checklist
       description: Ensure that your team has gone through the following guidelines before starting development
       options:
-        - label: [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
+        - label: |
+            [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
           required: true
         - label: [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
           required: true
