@@ -11,22 +11,6 @@ body:
       required: true
 
   - type: textarea
-    id: affected-pages
-    attributes:
-      label: Affected user pages
-      description: List of pages which are being introduced/modified/deleted as part of this
-    validations:
-      required: true
-
-  - type: textarea
-    id: affected-apis
-    attributes:
-      label: Affected API routes
-      description: List of backend routes which are being introduced/modified/deleted as part of this
-    validations:
-      required: true
-
-  - type: textarea
     id: mocks
     attributes:
       label: MOCKs/Screenshots
@@ -56,6 +40,22 @@ body:
         2. [User2]
     validations:
       required: true
+  
+  - type: textarea
+    id: affected-pages
+    attributes:
+      label: Affected user pages
+      description: List of pages which are being introduced/modified/deleted as part of this
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-apis
+    attributes:
+      label: Affected API routes
+      description: List of backend routes which are being introduced/modified/deleted as part of this
+    validations:
+      required: true
 
   - type: checkboxes
     id: issue-checklist
@@ -76,20 +76,15 @@ body:
       label: Pre-development checklist
       description: Ensure that your team has gone through the following guidelines before starting development
       options:
-        - label: |
-            [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
+        - label: [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
           required: true
-        - label: |
-            [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
+        - label: [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
           required: true
-        - label: |
-            [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) guidelines
+        - label: [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) guidelines
           required: true
-        - label: |
-            [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines
+        - label: [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines
           required: true
-        - label: |
-            [Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)
+        - label: [Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)
           required: true
 
   - type: checkboxes
@@ -98,58 +93,82 @@ body:
       label: Post-development checklist
       description: Make sure to complete this checklist before you close this issue.
       options:
+        - label: 'Have you run WPT tests?'
         - label: 'Have you done the QID updates as required?'
         - label: 'Have you updated the API test cases as required?'
         - label: 'Have you added your routes to OpenTelemetry for performance monitoring?'
-        - label: 'Have you run WPT tests?'
         - label: 'Have you checked your updates for vulnerabilities?'
         - label: 'Have you checked your updates for Sonar Issues?'
-        - label: |
-            Have you checked your updates for [Accessibility guidelines](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)?
+        - label: 'Have you made sure that the code is following the [Minimal Accessibility guidelines](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)?'
 
-  # Done till here
-
-  - type: checkboxes
-    id: wpt_tests
+  - type: dropdown
+    id: new-entities
     attributes:
-      label: WPT Tests
-      description: Are you planning to run WPT tests after this update?
+      label: Are you introducing new entities or value object(s)?
       options:
-        - label: '✅ Yes'
-        - label: '❌ No'
+        - ✅ Yes. Provide more details after creating the issue
+        - ❌ No
 
-  - type: checkboxes
-    id: wpt_tests_whole_app
+  - type: dropdown
+    id: new-projectors
     attributes:
-      label: WPT Tests for Whole App
-      description: Are you planning to run WPT tests of the whole APP after this update?
+      label: Are you introducing new projector(s) and read model(s)?
       options:
-        - label: '✅ Yes'
-        - label: '❌ No'
+        - ✅ Yes. Provide more details after creating the issue
+        - ❌ No
 
-  - type: markdown
+  - type: dropdown
+    id: new-commands
     attributes:
-      value: |
-        # Pre-development checklist
-        Make sure to complete this checklist before you start development.
-
-  - type: checkboxes
-    id: pre_development_checklist
-    attributes:
-      label: Pre-development Checklist
+      label: Are you introducing new command(s), command-result(s) and relevant domain service(s)??
       options:
-        - label: '✅ Introducing new entities or value object(s)? If any, make sure that they are clearly mentioned.'
-        - label: '✅ Introducing new projector(s) and read model(s)?'
-        - label: '✅ Introducing new command(s), command-result(s) and relevant domain service(s)?'
-        - label: '✅ Introducing new mapper(s)?'
-        - label: '✅ Introducing new repository(s)?'
-        - label: '✅ Introducing new composable(s)?'
-        - label: '✅ Are you using NuxtLink(s)?'
-        - label: '✅ Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?'
-        - label: '✅ Ensure that your team has gone through the [Coding](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines), [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines), [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) & [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines?'
+        - ✅ Yes. Provide more details after creating the issue
+        - ❌ No
 
-  - type: markdown
+  - type: dropdown
+    id: new-mappers
     attributes:
-      value: |
-        # Post-development checklist
-        Make sure to complete this checklist before you close this issue.
+      label: Are you introducing new mapper(s)?
+      options:
+        - ✅ Yes. Provide more details after creating the issue
+        - ❌ No
+  
+  - type: dropdown
+    id: new-repositories
+    attributes:
+      label: Are you introducing new repository(s)?
+      options:
+        - ✅ Yes. Provide more details after creating the issue and the reason why can't you use the existing ones?
+        - ❌ No
+  
+  - type: dropdown
+    id: new-composables
+    attributes:
+      label: Are you introducing new composable(s)?
+      options:
+        - ✅ Yes. Provide more details after creating the issue and justify why you it is needed?
+        - ❌ No
+
+  - type: dropdown
+    id: modify-common-elements
+    attributes:
+      label: Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?
+      options:
+        - ✅ Yes. Provide more details after creating the issue and justify why you it is needed?
+        - ❌ No
+
+  - type: dropdown
+    id: special-features
+    attributes:
+      label: Are you planning to use some special features such as Permanent cached images, sprites, etc? If yes, have you mentioned them clearly in the description?
+      options:
+        - ✅ Yes. Provide more details after creating the issue
+        - ❌ No
+  
+  - type: dropdown
+    id: wpt-tests
+    attributes:
+      label: Are you planning to write WPT tests for this development?
+      options:
+        - ✅ Yes. Provide WPT links after you have run them
+        - ❌ No
