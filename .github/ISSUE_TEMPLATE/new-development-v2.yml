@@ -67,7 +67,7 @@ body:
       description: Are you introducing new entity(s) or value object(s)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue
+        - ✅ Yes. [More details to be added]
     validations:
       required: true
 
@@ -78,7 +78,7 @@ body:
       description: Are you introducing new projector(s) and read model(s)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue
+        - ✅ Yes. [More details to be added]
     validations:
       required: true
 
@@ -89,7 +89,7 @@ body:
       description: Are you introducing new command(s), command-result(s) and relevant domain service(s)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue
+        - ✅ Yes. [More details to be added]
     validations:
       required: true
 
@@ -100,7 +100,7 @@ body:
       description: Are you introducing new mapper(s)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue
+        - ✅ Yes. [More details to be added]
     validations:
       required: true
 
@@ -111,7 +111,7 @@ body:
       description: Are you introducing new repository(s)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue and the reason why can't you use the existing ones?
+        - ✅ Yes. [Reasons for new repo...]
     validations:
       required: true
 
@@ -122,7 +122,7 @@ body:
       description: Are you introducing new composable(s)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue and justify why you it is needed?
+        - ✅ Yes. [Reasons for new composable...]
     validations:
       required: true
 
@@ -133,7 +133,7 @@ body:
       description: Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue and justify why you it is needed?
+        - ✅ Yes. [Reasons for the update...]
     validations:
       required: true
 
@@ -144,7 +144,7 @@ body:
       description: Are you planning to use some special features such as Permanent cached images, sprites, etc?
       options:
         - ❌ No
-        - ✅ Yes. Provide more details after creating the issue
+        - ✅ Yes. [Reasons for using special feature...]
     validations:
       required: true
 
@@ -155,7 +155,7 @@ body:
       description: Are you planning to write WPT tests for this development?
       options:
         - ❌ No
-        - ✅ Yes. Provide WPT links after you have run them
+        - ✅ Yes. [Provide WPT test links]
     validations:
       required: true
 
