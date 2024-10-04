@@ -63,10 +63,49 @@ body:
       label: Issue checklist
       description: Make sure to complete this checklist before you create this issue.
       options:
-        - label: 'Added one of the following label: "New-Feature", "Refactoring", OR "Experimental"'
+        - label: 'Added one of the following label: "new-feature", "refactoring", OR "experimental"'
           required: true
         - label: 'Added label for the APP: "Dashboard"'
           required: true
+        - label: 'Added the applicable labels: "read-operation" OR "write-operation"?'
+          required: true
+
+  - type: checkboxes
+    id: pre-development-checklist
+    attributes:
+      label: Pre-development checklist
+      description: Ensure that your team has gone through the following guidelines before starting development
+      options:
+        - label: |
+            [Coding Guidelines](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines)
+          required: true
+        - label: |
+            [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines)
+          required: true
+        - label: |
+            [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) guidelines
+          required: true
+        - label: |
+            [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines
+          required: true
+        - label: |
+            [Minimal Accessibility Checklist](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)
+          required: true
+
+  - type: checkboxes
+    id: post-development-checklist
+    attributes:
+      label: Post-development checklist
+      description: Make sure to complete this checklist before you close this issue.
+      options:
+        - label: 'Have you done the QID updates as required?'
+        - label: 'Have you updated the API test cases as required?'
+        - label: 'Have you added your routes to OpenTelemetry for performance monitoring?'
+        - label: 'Have you run WPT tests?'
+        - label: 'Have you checked your updates for vulnerabilities?'
+        - label: 'Have you checked your updates for Sonar Issues?'
+        - label: |
+            Have you checked your updates for [Accessibility guidelines](https://github.com/comprodls/c1-2024/wiki/Minimal-Accessibility-Checklist)?
 
   # Done till here
 
