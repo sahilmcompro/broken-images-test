@@ -1,29 +1,83 @@
 name: New Development v2
-description: Use this template for new development tasks.
-title: "[New Development] "
-labels: ["New-Feature", "Refactoring", "Experimental"]
+description: Use this template for creating new issues for development tasks.
+title: '[Developement objective - describe your development in less than 50 words]'
 body:
-  - type: markdown
-    attributes:
-      value: |
-        # Description
-        Please provide a detailed description of the new development task.
-
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Provide a detailed description of the new development task.
-      placeholder: Describe the task in detail...
+      description: Provide a detailed description of the new development task. Also, mention the tentative release.
+    validations:
+      required: true
 
-  - type: dropdown
+  - type: textarea
+    id: affected-pages
+    attributes:
+      label: Affected user pages
+      description: List of pages which are being introduced/modified/deleted as part of this
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-apis
+    attributes:
+      label: Affected API routes
+      description: List of backend routes which are being introduced/modified/deleted as part of this
+    validations:
+      required: true
+
+  - type: textarea
+    id: mocks
+    attributes:
+      label: MOCKs/Screenshots
+      description: Please add any screenshots/MOCKs that are available for this development
+    validations:
+      required: true
+
+  - type: textarea
+    id: access-patterns
+    attributes:
+      label: Access Patterns
+      description: Describe how the user will access this feature
+      placeholder: |
+        1. Login as student/teacher/admin
+        2. Open dashboard
+        3. [and so on...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: creds
+    attributes:
+      label: Sample credentials
+      description: Provide some test users
+      placeholder: |
+        1. [User1]
+        2. [User2]
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: issue-checklist
+    attributes:
+      label: Issue checklist
+      description: Make sure to complete this checklist before you create this issue.
+      options:
+        - label: 'Added one of the following label: "New-Feature", "Refactoring", OR "Experimental"'
+        - label: 'Added label for the APP: "Dashboard"'
+    validations:
+      required: true
+
+  # Done till here
+
+  - type: checkboxes
     id: wpt_tests
     attributes:
       label: WPT Tests
       description: Are you planning to run WPT tests after this update?
       options:
-        - ✅ Yes
-        - ❌ No
+        - label: '✅ Yes'
+        - label: '❌ No'
 
   - type: checkboxes
     id: wpt_tests_whole_app
@@ -31,8 +85,8 @@ body:
       label: WPT Tests for Whole App
       description: Are you planning to run WPT tests of the whole APP after this update?
       options:
-        - label: "✅ Yes"
-        - label: "❌ No"
+        - label: '✅ Yes'
+        - label: '❌ No'
 
   - type: markdown
     attributes:
@@ -45,15 +99,15 @@ body:
     attributes:
       label: Pre-development Checklist
       options:
-        - label: "✅ Introducing new entities or value object(s)? If any, make sure that they are clearly mentioned."
-        - label: "✅ Introducing new projector(s) and read model(s)?"
-        - label: "✅ Introducing new command(s), command-result(s) and relevant domain service(s)?"
-        - label: "✅ Introducing new mapper(s)?"
-        - label: "✅ Introducing new repository(s)?"
-        - label: "✅ Introducing new composable(s)?"
-        - label: "✅ Are you using NuxtLink(s)?"
-        - label: "✅ Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?"
-        - label: "✅ Ensure that your team has gone through the [Coding](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines), [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines), [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) & [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines?"
+        - label: '✅ Introducing new entities or value object(s)? If any, make sure that they are clearly mentioned.'
+        - label: '✅ Introducing new projector(s) and read model(s)?'
+        - label: '✅ Introducing new command(s), command-result(s) and relevant domain service(s)?'
+        - label: '✅ Introducing new mapper(s)?'
+        - label: '✅ Introducing new repository(s)?'
+        - label: '✅ Introducing new composable(s)?'
+        - label: '✅ Are you using NuxtLink(s)?'
+        - label: '✅ Are you updating any of the common components (Header, Footer, etc), common pages (Error.vue) OR global elements (plugins, base stylesheets, etc.)?'
+        - label: '✅ Ensure that your team has gone through the [Coding](https://github.com/comprodls/c1-2024/wiki/2.-Coding-Guidelines), [GIT Branching and Guidelines](https://github.com/comprodls/c1-2024/wiki/4.-GIT-Branching-and-Guidelines), [Code quality and security](https://github.com/comprodls/c1-2024/wiki/3.-Code-Quality-and-Security) & [Page load performance](https://github.com/comprodls/c1-2024/wiki/5.-Page-load-Performance) guidelines?'
 
   - type: markdown
     attributes:
