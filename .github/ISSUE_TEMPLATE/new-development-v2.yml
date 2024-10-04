@@ -64,9 +64,9 @@ body:
       description: Make sure to complete this checklist before you create this issue.
       options:
         - label: 'Added one of the following label: "New-Feature", "Refactoring", OR "Experimental"'
+          required: true
         - label: 'Added label for the APP: "Dashboard"'
-    validations:
-      required: true
+          required: true
 
   # Done till here
 
