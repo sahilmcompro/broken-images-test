@@ -19,6 +19,10 @@ List of pages which are being introduced/modified/deleted as part of this
 
 List of backend routes which are being introduced/modified/deleted as part of this
 
+# MOCKs/Screenshots
+
+Please add any screenshots/MOCKs that are available for this feature
+
 # Access Patterns
 
 1. Login as student/teacher/admin
