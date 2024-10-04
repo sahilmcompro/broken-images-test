@@ -49,11 +49,14 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: dropdown
     id: affected-apis
     attributes:
       label: Affected API routes
       description: List of backend routes which are being introduced/modified/deleted as part of this
+      options:
+        - ❌ No
+        - ✅ Yes. Provide more details after creating the issue
     validations:
       required: true
 
