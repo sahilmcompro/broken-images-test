@@ -16,14 +16,14 @@ body:
       description: Provide a detailed description of the new development task.
       placeholder: Describe the task in detail...
 
-  - type: checkboxes
+  - type: dropdown
     id: wpt_tests
     attributes:
       label: WPT Tests
       description: Are you planning to run WPT tests after this update?
       options:
-        - label: "✅ Yes"
-        - label: "❌ No"
+        - ✅ Yes
+        - ❌ No
 
   - type: checkboxes
     id: wpt_tests_whole_app
